@@ -74,15 +74,10 @@ function processDOM() {
     }
   });
 
-
   setTimeout(() => {
-    console.log('-> Vou zipar')
-    console.log(result_links)
     zipAndDownload(result_links);
-    console.log('-> List');
-    console.log(result_links);
     return result_links;
-  }, 5000);
+  }, 7000);
 }
 
 

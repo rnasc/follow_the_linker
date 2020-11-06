@@ -52,7 +52,7 @@ function zipAndDownload(linkArr) {
 function processDOM() {
   links = {}
   $('a').each(function () {
-    if (this.href.includes('/backoffice')) {
+    if (this.href.includes('/backoffice/listing/edit')) {
       links[this.href] = null;
     }
   })

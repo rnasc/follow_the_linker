@@ -52,7 +52,9 @@ function zipAndDownload(linkArr) {
 function processDOM() {
   links = {}
   $('a').each(function () {
-    links[this.href] = null;
+    if (this.href.includes('/backoffice')) {
+      links[this.href] = null;
+    }
   })
   a_links = [];
   result_links = []
